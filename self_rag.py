@@ -283,7 +283,7 @@ def decide_to_generate(state):
     filtered_documents = state["documents"]
     attempt = state["attempt"]
 
-    backend_details += "attempt: "+str(attempt)+"\n\n"
+    #backend_details += "attempt: "+str(attempt)+"\n\n"
     if attempt >= 9:
         return "generate"
 
@@ -326,7 +326,7 @@ def grade_generation_v_documents_and_question(state):
     )
     grade = score.binary_score
 
-    backend_details += "attempt: "+str(attempt)+"\n\n"
+    #backend_details += "attempt: "+str(attempt)+"\n\n"
     if attempt >= 7:
         return "exit"
 
